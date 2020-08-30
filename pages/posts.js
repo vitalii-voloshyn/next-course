@@ -1,14 +1,11 @@
 import Head from 'next/head'
+import MainLayout from '../components/MainLayout'
 
 export default function Posts() {
   return (
-   <>
-   <Head>
-     <title>Posts</title>
-     <meta name="keywords" content="next, react, redux" />
-   </Head>
+   <MainLayout title={'Posts'} >
     <h1>Posts page</h1>
-   </>
+   </MainLayout>
   )
 }
 // Routing
