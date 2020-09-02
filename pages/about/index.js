@@ -1,10 +1,11 @@
 import {useRouter} from 'next/router'
 import Head from 'next/head'
+import MainLayout from '../../components/MainLayout'
 
 export default function About() {
   const router = useRouter()
   return (
-  <>
+  <MainLayout>
   <Head>
     <title>About</title>
     <meta name="keywords" content="ssr, react, redux" />
@@ -21,7 +22,7 @@ export default function About() {
   style={styles.rightButton}
   onClick={() => router.push('/posts')}>Go to posts</button>
   </div>
-  </>
+  </MainLayout>
   )
 }
 
