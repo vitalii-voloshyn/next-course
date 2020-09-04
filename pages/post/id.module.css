@@ -1,0 +1,18 @@
+.post {
+  padding: 0 50px;
+}
+
+.post h1 {
+  text-align: center;
+}
+
+.post p {
+  text-align: left;
+  font-size: 20px;
+}
+
+.post a {
+  display: inline-block;
+  text-align: left;
+  font-size: 18px;
+}
