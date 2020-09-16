@@ -1,8 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import Link from 'next/link'
 import MainLayout from '../components/MainLayout'
+import { Mypost } from '../interfaces/post'
 
-export default function Posts({posts: serverPosts}) { 
+interface PostsPageProps{
+  posts: Mypost[]
+}
+
+export default function Posts({posts: serverPosts}: PostsPageProps) { 
    const [posts, setPosts] = useState(serverPosts)
 
    useEffect(() => {
@@ -14,7 +19,7 @@ export default function Posts({posts: serverPosts}) {
      if (!serverPosts) {
         load()
      }
-   })
+   },[])
 
    if (!posts) {
     return (

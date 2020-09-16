@@ -16,7 +16,7 @@ export default function Post({post: serverPost}) {
    if (!serverPost) {
      load()
    }
-  }, [])
+  },[])
 
 if (!post) {
   return (
